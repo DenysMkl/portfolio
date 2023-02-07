@@ -91,6 +91,10 @@ header{
     display: flex;
 }
 
+.search_bar{
+    margin-right: 15px;
+}
+
 .side-menu{
     display: flex;
     flex-basis: 490px;    
