@@ -86,6 +86,10 @@ header{
     flex-basis: 200px;
 }
 
+.logotype{
+    border-radius: 5px;
+}
+
 .company_name{
     font-family: "Itim";
     font-size: 35px;
