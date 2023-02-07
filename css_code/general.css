@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 *,
 *::before,
 *::after
@@ -8,11 +10,13 @@
     box-sizing: border-box;
 }
 
-a
-{
-    text-decoration: none;
-    color: black;
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+  color: whitesmoke;
 }
+
 
 h1,
 h2,
@@ -30,12 +34,13 @@ li,
 ol
 {
     list-style-type: none;
-
 }
 
 img
 {
     vertical-align: top;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 html,
@@ -47,4 +52,75 @@ body
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
     
+}
+
+header{
+    max-height: 200px;
+    background-color: #20244E;
+    color: whitesmoke;
+}
+
+[class*='_container']
+{
+    max-width: 1140px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-basis: 200px;
+}
+
+.company_name{
+    font-family: "Itim";
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.search{
+    display: flex;
+}
+
+.side-menu{
+    display: flex;
+    flex-basis: 490px;    
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 18px;
+    flex: 1 1 auto;
+}
+
+.items{
+    flex: 1 1 auto;
+    padding: 15px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    flex-basis: 150px;
+    justify-content: center;
+}
+
+.avatar{
+    min-width: 60px;
+    min-height: 60px;
+    background-color: black;
+    border-radius: 100%;
+    margin-left: 15px;
 }
