@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 *,
 *::before,
@@ -56,7 +60,7 @@ body
 
 header{
     max-height: 200px;
-    background-color: #20244E;
+    background-color: #303674;
     color: whitesmoke;
 }
 
@@ -96,19 +100,24 @@ header{
 
 .search_bar{
     margin-right: 15px;
+    background: transparent;
+    outline: 0;
+    color: whitesmoke;
+    font-size: 16px;
+    max-width: 150px;
 }
 
 .side-menu{
     display: flex;
-    flex-basis: 490px;    
+    flex-basis: auto;    
     justify-content: center;
 }
 
 .navbar{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-end;
-    font-size: 18px;
+    font-size: 16px;
     flex: 1 1 auto;
 }
 
@@ -120,14 +129,31 @@ header{
 .profile{
     display: flex;
     align-items: center;
-    flex-basis: 150px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .avatar{
-    min-width: 60px;
-    min-height: 60px;
-    background-color: black;
     border-radius: 100%;
     margin-left: 15px;
+    position: relative;
+}
+
+.avatar_block{
+    background-color: black;
+    border-radius: 100%;
+}
+
+.user{
+    border-radius: 100%;
+    transform: scale(.9);
+}
+
+.status{
+    background-color: green;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
 }
