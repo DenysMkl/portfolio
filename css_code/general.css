@@ -250,3 +250,32 @@ header{
         max-width: 970px;
     }
 }
+
+@media (max-width: 991.98px)
+{
+    [class*='_container']
+    {
+        max-width: 750px;
+    }
+    
+    .logo{
+        max-width: fit-content;
+    }
+
+    .company_name{
+        font-size: 20px;
+    }
+
+    .search_bar{
+        max-width: 100px;
+    }
+
+    .fa-angle-down{
+        display: none;
+    }
+
+    .items{
+        font-size: 14px;
+        padding: 8px;
+    }
+}
