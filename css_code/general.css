@@ -129,11 +129,7 @@ header{
     flex: 1 1 auto;
     padding: 15px;
 }
-
-.navbar_link{
-    position: relative;
-}
-
+    
 .sub_navbar{
     display: none;
 }
