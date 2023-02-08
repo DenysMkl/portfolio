@@ -242,3 +242,11 @@ header{
     border-radius: 100%;
     border: 1.5px solid whitesmoke;
 }
+
+@media (max-width: 1087px)
+{
+    [class*='_container']
+    {
+        max-width: 970px;
+    }
+}
