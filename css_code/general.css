@@ -116,6 +116,57 @@ header{
     align-items: center;
 }
 
+.phone_menu{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: whitesmoke;
+    border-radius: 100%;
+}
+
+.x_bar{
+    position: relative;
+    width: 50px;
+    background-color: black;
+    height: 8px;
+}
+
+.x_bar::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 8px;
+    top: -15px;
+    left: 0;
+    background-color: black;
+    transition: .5s;
+}
+
+.x_bar::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 8px;
+    bottom: -15px;
+    left: 0;
+    background-color: black;
+    transition: .5s;
+}
+
+.phone_menu:hover .x_bar{
+    background-color: transparent;
+}
+
+.phone_menu:hover .x_bar::after{
+    transform: translate(0, -15px) rotate(-45deg);
+}
+
+.phone_menu:hover .x_bar::before{
+    transform: translate(0, 15px) rotate(45deg);
+}
+
 .navbar{
     display: flex;
     justify-content: space-around;
