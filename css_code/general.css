@@ -116,6 +116,8 @@ header{
     display: flex;
     flex-basis: auto;    
     justify-content: center;
+    min-height: 60px;
+    align-items: center;
 }
 
 .navbar{
@@ -124,11 +126,34 @@ header{
     align-items: flex-end;
     font-size: 16px;
     flex: 1 1 auto;
+    
 }
 
 .items{
     flex: 1 1 auto;
     padding: 15px;
+}
+
+.navbar_link{
+    position: relative;
+}
+
+.sub_navbar{
+    display: none;
+}
+
+.subitems{
+    padding: 20px 15px;
+}
+
+.items:hover .sub_navbar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #21244b;
+    margin-top: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .profile{
@@ -161,4 +186,5 @@ header{
     width: 15px;
     height: 15px;
     border-radius: 100%;
+    border: 1px solid whitesmoke;
 }
