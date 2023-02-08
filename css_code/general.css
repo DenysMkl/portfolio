@@ -263,7 +263,8 @@ header{
     }
 
     .company_name{
-        font-size: 20px;
+        font-size: 22px;
+        margin-left: 10px;
     }
 
     .search_bar{
@@ -279,3 +280,4 @@ header{
         padding: 8px;
     }
 }
+
