@@ -305,7 +305,6 @@ header{
         width: 100%;
         top: 0;
         width: 100%;
-        
         align-items: center;
         flex-direction: column;
         justify-content: flex-start;
@@ -313,7 +312,7 @@ header{
         margin-top: 90px;
         padding: 20px 0 20px 0;
         left: -100%;
-        transition: 1s;
+        transition: .5s;
     }
 
     .change_block.active{
