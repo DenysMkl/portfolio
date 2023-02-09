@@ -168,15 +168,15 @@ header{
     transition: .3s;
 }
 
-.phone_menu:hover .x_bar{
+.x_bar.active{
     background-color: transparent;
 }
 
-.phone_menu:hover .x_bar::after{
+.x_bar.active::after{
     transform: translate(0, -15px) rotate(-45deg);
 }
 
-.phone_menu:hover .x_bar::before{
+.x_bar.active::before{
     transform: translate(0, 15px) rotate(45deg);
 }
 
@@ -322,7 +322,7 @@ header{
         transition: 1s;
     }
 
-    .change_block:target{
+    .change_block.active{
         left: 0;
     }
 
