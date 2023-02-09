@@ -93,7 +93,7 @@ header{
 }
 
 .change_block{
-    display: flex;
+    display: none;
 }
 
 .search{
@@ -305,9 +305,12 @@ header{
         position: absolute;
         width: 100%;
         top: 90px;
-        padding: 10px;
+        padding-left: 10px;
+        padding-bottom: 20px;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: flex-end;
+        overflow: hidden;
     }
 
     .navbar{
