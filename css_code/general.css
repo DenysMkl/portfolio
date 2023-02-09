@@ -127,14 +127,6 @@ header{
     position: relative;
 }
 
-.x_bar_a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-}
-
 .x_bar{
     position: relative;
     width: 40px;
@@ -306,6 +298,10 @@ header{
     .phone_menu{
         display: flex;
         order: -1;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
     }
 
     .change_block{
