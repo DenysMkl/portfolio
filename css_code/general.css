@@ -93,7 +93,9 @@ header{
 }
 
 .change_block{
-    display: none;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 700px;
 }
 
 .search{
@@ -122,11 +124,15 @@ header{
 
 .phone_menu{
     display: none;
-    align-items: center;
     position: relative;
+}
+
+.x_bar_a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 60px;
     height: 60px;
-    justify-content: flex-start;
 }
 
 .x_bar{
@@ -136,6 +142,7 @@ header{
     height: 8px;
     border-radius: 4px;
 }
+
 
 .x_bar::before{
     position: absolute;
@@ -298,34 +305,51 @@ header{
 
     .phone_menu{
         display: flex;
-        order: -1;        
+        order: -1;
     }
 
     .change_block{
-        position: absolute;
+        position: fixed;
         width: 100%;
-        top: 90px;
-        padding-left: 10px;
-        padding-bottom: 20px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-end;
-        overflow: visible;
+        justify-content: flex-start;
+        margin-top: 140px;
+        left: -100%;
+        transition: 1s;
+    }
+
+    .change_block:target{
+        left: 0;
     }
 
     .navbar{
         flex-direction: column;
         padding-top: 10px;
+        width: 100%;
+        align-items: center;
+    }
 
+    
+    .items:hover .sub_navbar{
+        position: relative;
+        align-items: center;
     }
 
     .side-menu{
-        justify-content: flex-start;
+        justify-content: center;
+        min-width: 300px;
     }
 
-    .items{
-        width: 100%;
+    .items,
+    .subitems
+    {
+        width: fit-content;
         font-size: 18px;
+        text-align: center;
     }
 
     .logo{
