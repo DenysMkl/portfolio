@@ -16,6 +16,8 @@ function Info() {
                 height += 5
                 document.getElementById("change_block").style.height = height+'px'
             }
+            document.getElementById("change_block").style.overflow = 'hidden'
         }
+        
     }
 }

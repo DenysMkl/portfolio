@@ -310,7 +310,7 @@ header{
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-end;
-        overflow: hidden;
+        overflow: visible;
     }
 
     .navbar{
