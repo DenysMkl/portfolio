@@ -94,7 +94,6 @@ header{
 
 .change_block{
     display: flex;
-    justify-content: space-around;
     flex-basis: 700px;
 }
 
@@ -304,7 +303,6 @@ header{
         position: fixed;
         width: 100%;
         top: 0;
-        width: 100%;
         align-items: center;
         flex-direction: column;
         justify-content: flex-start;
