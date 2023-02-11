@@ -131,13 +131,14 @@ header{
 .phone_menu{
     display: none;
     position: relative;
+
 }
 
 .x_bar{
     position: relative;
-    width: 40px;
+    width: 24px;
     background-color: whitesmoke;
-    height: 4px;
+    height: 3px;
     border-radius: 4px;
 }
 
@@ -147,8 +148,8 @@ header{
     content: "";
     border-radius: 4px;
     width: 100%;
-    height: 4px;
-    top: -15px;
+    height: 3px;
+    top: -10px;
     left: 0;
     background-color: whitesmoke;
     transition: .3s;
@@ -159,8 +160,8 @@ header{
     content: "";
     border-radius: 4px;
     width: 100%;
-    height: 4px;
-    bottom: -15px;
+    height: 3px;
+    bottom: -10px;
     left: 0;
     background-color: whitesmoke;
     transition: .3s;
@@ -171,11 +172,11 @@ header{
 }
 
 .x_bar.active::after{
-    transform: translate(0, -15px) rotate(-45deg);
+    transform: translate(0, -10px) rotate(-45deg);
 }
 
 .x_bar.active::before{
-    transform: translate(0, 15px) rotate(45deg);
+    transform: translate(0, 10px) rotate(45deg);
 }
 
 .navbar{
@@ -317,7 +318,7 @@ header{
 
     .header_container{
         justify-content: space-around;
-        max-height: 56px;
+        min-height: 56px;
     }
 
     .company_name{
@@ -329,8 +330,8 @@ header{
         order: -1;
         align-items: center;
         justify-content: center;
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
     }
 
     .change_block{
@@ -364,6 +365,7 @@ header{
         align-items: center;
         box-shadow: none;
         padding: 0px;
+        margin-top: 10px;
     }
 
     .side-menu{
