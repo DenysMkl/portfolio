@@ -73,7 +73,7 @@ header{
 
 .header_container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     max-height: 60px;
     align-items: center;
     padding: 4px 0;
