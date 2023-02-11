@@ -227,8 +227,8 @@ header{
     position: absolute;
     top: 0px;
     right: 0px;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-radius: 100%;
     border: 1.5px solid whitesmoke;
 }
@@ -238,8 +238,8 @@ header{
     position: absolute;
     top: 0px;
     right: 0px;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-radius: 100%;
     border: 1.5px solid whitesmoke;
 }
