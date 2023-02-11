@@ -39,8 +39,11 @@ ol
 img
 {
     vertical-align: top;
-    max-width: 50px;
-    max-height: 50px;
+}
+
+.bar_img{
+    max-width: 40px;
+    max-height: 40px;
 }
 
 html,
@@ -71,8 +74,9 @@ header{
 .header_container{
     display: flex;
     justify-content: space-between;
-    min-height: 90px;
+    max-height: 60px;
     align-items: center;
+    padding: 4px 0;
 }
 
 .logo{
@@ -88,25 +92,27 @@ header{
 
 .company_name{
     font-family: "Itim";
-    font-size: 35px;
-    margin-left: 20px;
+    font-size: 24px;
+    margin-left: 12px;
 }
 
 .change_block{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-basis: 700px;
 }
 
 .search{
     display: flex;
-    padding: 15px;
+    padding: 7px;
+    align-items: center;
     border: 2px solid whitesmoke;
     border-radius: 10px;
 }
 
 .search_bar{
-    margin-right: 15px;
+    margin-right: 10px;
     background: transparent;
     outline: 0;
     color: whitesmoke;
@@ -186,10 +192,11 @@ header{
     
 .sub_navbar{
     display: none;
+    padding: 10px;
 }
 
 .subitems{
-    padding: 20px 15px;
+    padding: 10px 15px;
 }
 
 .profile{
@@ -299,8 +306,22 @@ header{
         max-width: none;
     }
 
+    .bar_img{
+        max-width: 32px;
+        max-height: 32px;
+    }
+
+    header{
+        box-shadow: none;
+    }
+
     .header_container{
         justify-content: space-around;
+        max-height: 56px;
+    }
+
+    .company_name{
+        display: none;
     }
 
     .phone_menu{
@@ -320,7 +341,7 @@ header{
         flex-direction: column;
         justify-content: flex-start;
         background-color: #21244b;
-        margin-top: 90px;
+        margin-top: 56px;
         padding: 20px 0 20px 0;
         left: -100%;
         transition: .5s;
@@ -341,6 +362,8 @@ header{
     .items.active .sub_navbar{
         position: relative;
         align-items: center;
+        box-shadow: none;
+        padding: 0px;
     }
 
     .side-menu{
@@ -352,7 +375,7 @@ header{
     .subitems
     {
         width: fit-content;
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
     }
 
