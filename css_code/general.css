@@ -62,6 +62,11 @@ header{
     background-color: #21244b;
     color: whitesmoke;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    transition: .5s;
+}
+
+header.active{
+    background-color: rgb(77, 72, 71);
 }
 
 [class*='_container']
@@ -205,6 +210,30 @@ header{
     justify-content: space-around;
 }
 
+.theme{
+    width: 40px;
+    height: 20px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    display: flex;
+}
+
+.theme.light{
+    justify-content: flex-start;
+}
+
+.theme.night{
+    justify-content: flex-end;
+}
+
+.switcher{
+    width: 18px;
+    border-radius: 100%;
+    background-color: rgb(33, 126, 33);
+    margin: 2px;
+    border: 1.5px solid black;
+}
+
 .avatar{
     border-radius: 100%;
     margin-left: 15px;
@@ -255,7 +284,10 @@ header{
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
 
-    
+    header.active .items:hover .sub_navbar{
+        background-color: rgb(77, 72, 71);
+    }
+
     .item:hover{
         color: tomato;
     }
@@ -301,6 +333,10 @@ header{
         margin-top: 15px;
         border-radius: 15px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    header.active .items.active .sub_navbar{
+        background-color: rgb(77, 72, 71);
     }
 }
 
@@ -350,6 +386,10 @@ header{
         padding: 20px 0 20px 0;
         left: -100%;
         transition: .5s;
+    }
+
+    header.active .change_block{
+        background-color: rgb(77, 72, 71);
     }
 
     .change_block.active{
