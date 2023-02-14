@@ -67,6 +67,9 @@ body
 
 main{
     flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer{
@@ -305,6 +308,7 @@ footer.active{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 15px;
 }
 
 .footer_container p {
@@ -312,7 +316,7 @@ footer.active{
 }
 
 .footer_container > :nth-child(even){
-    padding: 20px 0;
+    padding: 15px 0 ;
 }
 
 .contacts{
@@ -324,19 +328,22 @@ footer.active{
 .copyright{
     display: flex;
     justify-content: center;
+    padding-bottom: 15px;
 }
 
 .info_list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.add_info{
+.add_info > p{
     text-transform: uppercase;
     position: relative;
+    width: fit-content;
 }
 
-.add_info::after{
+.add_info > p::after{
     position: absolute;
     content: "";
     width: 50%;
@@ -345,6 +352,18 @@ footer.active{
     bottom: -5px;
     left: 0;
     border-radius: 1px;
+}
+
+.info_bar{
+    margin-top: 10px;
+}
+
+.info_bar > :nth-child(odd){
+    padding: 10px 0;
+}
+
+.details{
+    font-size: 14px;
 }
 
 @media (min-width: 992px)
@@ -520,5 +539,13 @@ footer.active{
 
     .contacts > :nth-child(even){
         padding: 0 20px;
+    }
+
+    .details{
+        font-size: 8px;
+    }
+
+    .add_info > p{
+        font-size: 12px;
     }
 }
