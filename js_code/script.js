@@ -4,7 +4,7 @@ var sub_menu = document.querySelectorAll('.items')
 var menu = document.querySelector('.change_block')
 var theme = document.querySelector('.theme')
 var header = document.querySelector('.header')
-
+var footer = document.querySelector('.footer')
 opener.addEventListener('click', function () {
     perem.classList.toggle('active')
     menu.classList.toggle('active')
@@ -31,4 +31,5 @@ theme.addEventListener('click', function () {
     theme.classList.toggle('night')
     theme.classList.toggle('light')
     header.classList.toggle('active')
-})
+    footer.classList.toggle('active')
+})  

@@ -10,57 +10,89 @@
     <title>Main_Page</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header_container">
-            <a href="#" class="logo">
-                <img src="../photos/logo.png" alt="logotype" class="logotype bar_img">
-                <span class="company_name">nuroin</span>
-            </a>
-            <div class="phone_menu" id="phone_menu">
-                <span class="x_bar"></span>
-            </div>
-            <div class="change_block" id="open">
-                <div class="search">
-                    <input type="text" placeholder="Search..." class="search_bar">
-                    <a href="#"><i class="fas fa-search fa-2x"></i></a>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header_container">
+                <a href="#" class="logo">
+                    <img src="../photos/logo.png" alt="logotype" class="logotype bar_img">
+                    <span class="company_name">nuroin</span>
+                </a>
+                <div class="phone_menu" id="phone_menu">
+                    <span class="x_bar"></span>
                 </div>
-                <div class="side-menu">
-                    <ul class="navbar">
-                        <li class="items item1"><a href="#" class="item">Home</a></li>
-                        <li class="items item2"><a href="#" class="item">Explore</a></li>
-                        <li class="items item3">
-                            <a href="#" class="item">Community <i class="fa fa-angle-down"></i></a>
-                            <ul class="sub_navbar">
-                                <li class="subitems subitem1"><a href="#" class="item">Community1</a></li>
-                                <li class="subitems subitem2"><a href="#" class="item">Community2</a></li>
-                                <li class="subitems subitem3"><a href="#" class="item">Community3</a></li>
-                            </ul>
-                        </li>
-                        <li class="items item4">
-                            <a href="#" class="item">Pages <i class="fa fa-angle-down"></i></a>
+                <div class="change_block" id="open">
+                    <div class="search">
+                        <input type="text" placeholder="Search..." class="search_bar">
+                        <a href="#"><i class="fas fa-search fa-2x"></i></a>
+                    </div>
+                    <div class="side-menu">
+                        <ul class="navbar">
+                            <li class="items item1"><a href="#" class="item">Home</a></li>
+                            <li class="items item2"><a href="#" class="item">Explore</a></li>
+                            <li class="items item3">
+                                <a href="#" class="item">Community <i class="fa fa-angle-down"></i></a>
                                 <ul class="sub_navbar">
-                                    <li class="subitems subitem1"><a href="#" class="item">Pages1</a></li>
-                                    <li class="subitems subitem2"><a href="#" class="item">Pages2</a></li>
-                                    <li class="subitems subitem3"><a href="#" class="item">Pages3</a></li>
+                                    <li class="subitems subitem1"><a href="#" class="item">Community1</a></li>
+                                    <li class="subitems subitem2"><a href="#" class="item">Community2</a></li>
+                                    <li class="subitems subitem3"><a href="#" class="item">Community3</a></li>
                                 </ul>
-                        </li>
-                        <li class="items item5"><a href="#" class="item">Activity</a></li>
+                            </li>
+                            <li class="items item4">
+                                <a href="#" class="item">Pages <i class="fa fa-angle-down"></i></a>
+                                    <ul class="sub_navbar">
+                                        <li class="subitems subitem1"><a href="#" class="item">Pages1</a></li>
+                                        <li class="subitems subitem2"><a href="#" class="item">Pages2</a></li>
+                                        <li class="subitems subitem3"><a href="#" class="item">Pages3</a></li>
+                                    </ul>
+                            </li>
+                            <li class="items item5"><a href="#" class="item">Activity</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="theme light">
+                        <div class="switcher"></div>
+                    </div>
+                    <a class="avatar" href="#">
+                        <div class="avatar_block">
+                            <img src="../photos/user.png" alt="user_photo" class="user bar_img">
+                        </div>
+                        <div class="status online"></div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            Content
+        </main>
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="networks">
+                    <p>Get connected with us on social networks</p>
+                    <div class="contacts">
+                        <a href="#"><i class="fab fa-instagram fa-2x" id="inst"></i></a>
+                        <a href="#"><i class="fab fa-github fa-2x" id="gh"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square fa-2x" id="fb"></i></a>
+                        <a href="#"><i class="fab fa-youtube fa-2x" id="ytb"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x" id="twit"></i></a>
+                        <!--<a href="#"><i class="fas fa-phone fa-2x" id="tel"></i></a>-->
+                    </div>
+                </div>
+                <div class="info">
+                    <ul class="info_list">
+                        <li class="add_info">Company name</li>
+                        <li class="add_info">Products</li>
+                        <li class="add_info">Useful links</li>
+                        <li class="add_info">Contact</li>
                     </ul>
                 </div>
-            </div>
-            <div class="profile">
-                <div class="theme light">
-                    <div class="switcher"></div>
+                <div class="copyright">
+                    <p>© 2023 Copyright: github.com/DenysMkl</p>          
                 </div>
-                <a class="avatar" href="#">
-                    <div class="avatar_block">
-                        <img src="../photos/user.png" alt="user_photo" class="user bar_img">
-                    </div>
-                    <div class="status online"></div>
-                </a>
             </div>
-        </div>
-    </header>
+        </footer>
+    </div>
+    
     <script src="../js_code/script.js"></script>
 </body>
 </html>

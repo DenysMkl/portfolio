@@ -57,6 +57,27 @@ body
     
 }
 
+.wrapper
+{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main{
+    flex: 1 1 auto;
+}
+
+footer{
+    min-height: 160px;
+    background-color: #21244b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
 header{
     max-height: 90px;
     background-color: #21244b;
@@ -65,7 +86,8 @@ header{
     transition: .5s;
 }
 
-header.active{
+header.active,
+footer.active{
     background-color: rgb(77, 72, 71);
 }
 
@@ -227,11 +249,10 @@ header.active{
 }
 
 .switcher{
-    width: 18px;
+    width: 16px;
     border-radius: 100%;
     background-color: rgb(33, 126, 33);
     margin: 2px;
-    border: 1.5px solid black;
 }
 
 .avatar{
@@ -270,6 +291,60 @@ header.active{
     height: 10px;
     border-radius: 100%;
     border: 1.5px solid whitesmoke;
+}
+
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    color: whitesmoke;
+}
+
+.networks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_container p {
+    font-size: 16px;
+}
+
+.footer_container > :nth-child(even){
+    padding: 20px 0;
+}
+
+.contacts{
+    display: flex;
+    flex-basis: 200px;
+    justify-content: space-around;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+
+.info_list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.add_info{
+    text-transform: uppercase;
+    position: relative;
+}
+
+.add_info::after{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: rgb(46, 80, 179);
+    bottom: -5px;
+    left: 0;
+    border-radius: 1px;
 }
 
 @media (min-width: 992px)
@@ -338,6 +413,7 @@ header.active{
     header.active .items.active .sub_navbar{
         background-color: rgb(77, 72, 71);
     }
+
 }
 
 @media (max-width: 767.98px) {
@@ -431,5 +507,18 @@ header.active{
 
     .company_name{
         margin: 0;
+    }
+
+    .networks{
+        flex-direction: column;
+    }
+
+    .contacts{
+        flex-basis: auto;
+        padding: 15px 0;
+    }
+
+    .contacts > :nth-child(even){
+        padding: 0 20px;
     }
 }
