@@ -33,3 +33,10 @@ theme.addEventListener('click', function () {
     header.classList.toggle('active')
     footer.classList.toggle('active')
 })  
+
+/*var mass = [1,2,3,4,5,6,7,8]
+let i = 0
+setInterval(function(){
+    console.log(i)
+    i++
+}, 5000)*/

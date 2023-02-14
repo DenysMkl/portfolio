@@ -243,6 +243,10 @@ footer.active{
     display: flex;
 }
 
+.profile i{
+    padding: 0 5px;
+}
+
 .theme.light{
     justify-content: flex-start;
 }
