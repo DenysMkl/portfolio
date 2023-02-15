@@ -410,8 +410,12 @@ footer.active{
     }
 
     .company_name{
-        font-size: 22px;
+        font-size: 18px;
         margin-left: 10px;
+    }
+
+    .change_block{
+        justify-content: center;
     }
 
     .search_bar{
@@ -474,7 +478,7 @@ footer.active{
     }
 
     .change_block{
-        position: fixed;
+        position: absolute;
         width: 100%;
         top: 0;
         align-items: center;
