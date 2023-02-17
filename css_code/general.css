@@ -265,7 +265,8 @@ footer.active{
     background-color: #303030;
     border-radius: 10px;
     z-index: 999;
-    transition: .1s;
+    right: 0;
+    transition: .5s;
     padding: 10px;
     transform: scale(0);
 }
@@ -278,7 +279,6 @@ footer.active{
 }
 
 .user_prof .user_nick{
-    color: whitesmoke;
     font-size: 24px;
     padding-left: 10px;
     
@@ -291,7 +291,6 @@ footer.active{
 }
 
 .wrap .profile_block{
-    color: whitesmoke;
     font-size: 12px;
     font-weight: 500;
     display: flex;
@@ -321,7 +320,6 @@ footer.active{
 
 .prof_text{
     font-size: 18px;
-    color: whitesmoke;
 }
 
 .swapper{
@@ -464,6 +462,9 @@ footer.active{
     font-size: 14px;
 }
 
+.profile_info.open{
+    transform: scale(.7);
+}
 
 @media (min-width: 992px)
 {
@@ -483,10 +484,6 @@ footer.active{
 
     .item:hover{
         color: tomato;
-    }
-
-    .profile_info.open{
-        transform: scale(1);
     }
     
 }
@@ -540,11 +537,6 @@ footer.active{
     header.active .items.active .sub_navbar{
         background-color: rgb(77, 72, 71);
     }
-
-    .profile_info.open{
-        transform: scale(.7);
-    }
-
 }
 
 @media (max-width: 767.98px) {
