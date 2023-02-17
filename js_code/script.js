@@ -5,6 +5,14 @@ var menu = document.querySelector('.change_block')
 var theme = document.querySelector('.theme')
 var header = document.querySelector('.header')
 var footer = document.querySelector('.footer')
+var avatar = document.querySelector('.profile')
+var prof_menu = document.querySelector('.profile_info')
+
+
+avatar.addEventListener('click', function () {
+    prof_menu.classList.toggle('open')
+})
+
 opener.addEventListener('click', function () {
     perem.classList.toggle('active')
     menu.classList.toggle('active')

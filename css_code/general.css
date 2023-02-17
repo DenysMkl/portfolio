@@ -257,14 +257,17 @@ footer.active{
 
 .profile_info{
     position: absolute;
-    top: 80px;
+    top: 0px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    background-color: rgb(191, 189, 189);
+    background-color: #303030;
     border-radius: 10px;
     z-index: 999;
+    transition: .1s;
+    padding: 10px;
+    transform: scale(0);
 }
 
 .user_prof{
@@ -275,7 +278,7 @@ footer.active{
 }
 
 .user_prof .user_nick{
-    color: black;
+    color: whitesmoke;
     font-size: 24px;
     padding-left: 10px;
     
@@ -284,17 +287,23 @@ footer.active{
 .wrap{
     display: grid;
     grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
 }
 
 .wrap .profile_block{
     color: whitesmoke;
-    
+    font-size: 12px;
+    font-weight: 500;
     display: flex;
     padding: 20px;
     margin: 10px;
     justify-content: center;
     background-color: #3F3F3F;
     border-radius: 8px;
+}
+
+.wrap .profile_block:hover{
+    background-color: rgb(107, 108, 108);
 }
 
 .params{
@@ -312,7 +321,7 @@ footer.active{
 
 .prof_text{
     font-size: 18px;
-    color: black;
+    color: whitesmoke;
 }
 
 .swapper{
@@ -322,16 +331,18 @@ footer.active{
 }
 
 .param_items{
-    margin: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 
-.profile i{
-    padding: 0 5px;
+.param_items:hover{
+    background-color: #565759;
+    border-radius: 8px;
 }
 
 .theme.light{
     justify-content: flex-start;
-    background-color: #565759;
+    background-color: #aeafb1;
 }
 
 .theme.night{
@@ -347,7 +358,6 @@ footer.active{
 }
 
 .avatar{
-    border-radius: 100%;
     margin-left: 15px;
     position: relative;
 }
@@ -454,6 +464,7 @@ footer.active{
     font-size: 14px;
 }
 
+
 @media (min-width: 992px)
 {
     .items:hover .sub_navbar{
@@ -473,6 +484,11 @@ footer.active{
     .item:hover{
         color: tomato;
     }
+
+    .profile_info.open{
+        transform: scale(1);
+    }
+    
 }
 @media (max-width: 1087px)
 {
@@ -523,6 +539,10 @@ footer.active{
 
     header.active .items.active .sub_navbar{
         background-color: rgb(77, 72, 71);
+    }
+
+    .profile_info.open{
+        transform: scale(.7);
     }
 
 }
