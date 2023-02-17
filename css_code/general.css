@@ -46,6 +46,11 @@ img
     max-height: 40px;
 }
 
+.add_bar{
+    max-width: 60px;
+    max-height: 60px;
+}
+
 html,
 body
 {
@@ -247,6 +252,77 @@ footer.active{
     background-color: whitesmoke;
     border-radius: 15px;
     display: flex;
+    margin: 0 10px;
+}
+
+.profile_info{
+    position: absolute;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgb(191, 189, 189);
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.user_prof{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.user_prof .user_nick{
+    color: black;
+    font-size: 24px;
+    padding-left: 10px;
+    
+}
+
+.wrap{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+}
+
+.wrap .profile_block{
+    color: whitesmoke;
+    
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    justify-content: center;
+    background-color: #3F3F3F;
+    border-radius: 8px;
+}
+
+.params{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.swap_theme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prof_text{
+    font-size: 18px;
+    color: black;
+}
+
+.swapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.param_items{
+    margin: 20px;
 }
 
 .profile i{
@@ -255,16 +331,18 @@ footer.active{
 
 .theme.light{
     justify-content: flex-start;
+    background-color: #565759;
 }
 
 .theme.night{
     justify-content: flex-end;
+    background-color: #007AFF;
 }
 
 .switcher{
     width: 16px;
     border-radius: 100%;
-    background-color: rgb(33, 126, 33);
+    background-color: whitesmoke;
     margin: 2px;
 }
 
