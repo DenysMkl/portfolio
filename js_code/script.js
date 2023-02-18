@@ -42,6 +42,12 @@ theme.addEventListener('click', function () {
     footer.classList.toggle('active')
 })  
 
+document.addEventListener('click', function (event) {
+    if ((!prof_menu.contains(event.target) && prof_menu.classList.contains('open'))&& !avatar.contains(event.target)){
+        prof_menu.classList.remove('open')
+    }
+})
+
 /*var mass = [1,2,3,4,5,6,7,8]
 let i = 0
 setInterval(function(){
