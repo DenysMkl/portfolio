@@ -11,6 +11,8 @@ var prof_menu = document.querySelector('.profile_info')
 
 avatar.addEventListener('click', function () {
     prof_menu.classList.toggle('open')
+    menu.classList.remove('active')
+    perem.classList.remove('active')
 })
 
 opener.addEventListener('click', function () {
