@@ -249,7 +249,6 @@ footer.active{
 .theme{
     width: 40px;
     height: 20px;
-    background-color: whitesmoke;
     border-radius: 15px;
     display: flex;
     margin: 0 10px;
@@ -258,6 +257,7 @@ footer.active{
 .profile_info{
     position: absolute;
     top: 0px;
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -464,6 +464,7 @@ footer.active{
 
 .profile_info.open{
     transform: scale(.7);
+    opacity: 1;
 }
 
 @media (min-width: 992px)
