@@ -50,8 +50,7 @@ document.addEventListener('click', function (event) {
     }
 })
 
-/*var mass = [1,2,3,4,5,6,7,8]
-let i = 0
+/*let i = 0
 setInterval(function(){
     console.log(i)
     i++
