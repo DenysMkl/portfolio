@@ -670,7 +670,7 @@ footer.active{
     }
 
     .param_items{
-        padding: 6px;
+        padding: 4px;
     }
 
     .prof_text{
@@ -685,5 +685,8 @@ footer.active{
     .wrap .profile_block{
         font-weight: 0;
         font-size: 10px;
+    }
+    .params{
+        padding: 4px;
     }
 }
