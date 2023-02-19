@@ -673,6 +673,10 @@ footer.active{
         padding: 6px;
     }
 
+    .prof_text{
+        font-size: 14px;
+    }
+
     .wrap{
         grid-template-columns: 70px 70px 70px;
         grid-template-rows: 70px 70px;
