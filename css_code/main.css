@@ -1,0 +1,38 @@
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 20px;
+    margin: 40px;
+}
+
+.card *{
+    margin: 10px;
+}
+
+.prodPhoto{
+    width: 100px;
+    height: 100px;
+}
+
+.prodName{
+    font-size: 20px;
+}
+
+.but{
+    background-color: greenyellow;
+    padding: 15px 30px;
+    border-radius: 25px;
+}
+
+.but:active{
+    transform: translate(2px, 2px);
+}
