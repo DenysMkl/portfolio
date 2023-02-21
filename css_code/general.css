@@ -464,9 +464,24 @@ footer.active{
     z-index: 999;
 }
 
+.items.active .sub_navbar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #21244b;
+    margin-top: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: 0.5s;
+}
+
+header.active .items.active .sub_navbar{
+    background-color: rgb(77, 72, 71);
+}
+
 @media (min-width: 992px)
 {
-    .items:hover .sub_navbar{
+    .items.hov .sub_navbar{
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -476,7 +491,7 @@ footer.active{
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
 
-    header.active .items:hover .sub_navbar{
+    header.active .items.hov .sub_navbar{
         background-color: rgb(77, 72, 71);
     }
 
@@ -522,19 +537,7 @@ footer.active{
         padding: 8px;
     }
 
-    .items.active .sub_navbar{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background-color: #21244b;
-        margin-top: 15px;
-        border-radius: 15px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
 
-    header.active .items.active .sub_navbar{
-        background-color: rgb(77, 72, 71);
-    }
 }
 
 @media (max-width: 767.98px) {

@@ -38,3 +38,13 @@ document.addEventListener('click', function (event) {
         prof_menu.classList.remove('open')
     }
 })
+
+
+sub_menu.forEach(elem => {
+    elem.onmouseover = function () {
+        elem.classList.add('hov')
+    }
+    elem.onmouseout = function () {
+        elem.classList.remove('hov')
+    }    
+})
