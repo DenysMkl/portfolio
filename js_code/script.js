@@ -7,9 +7,6 @@ var header = document.querySelector('.header')
 var footer = document.querySelector('.footer')
 var avatar = document.querySelector('.profile')
 var prof_menu = document.querySelector('.profile_info')
-var search_bar = document.querySelector('.search_bar')
-var prodNames = Array.from(document.querySelectorAll('.prodName'))
-
 
 
 avatar.addEventListener('click', function () {
@@ -40,23 +37,4 @@ document.addEventListener('click', function (event) {
     if ((!prof_menu.contains(event.target) && prof_menu.classList.contains('open'))&& !avatar.contains(event.target)){
         prof_menu.classList.remove('open')
     }
-})
-
-var inter = null
-
-
-search_bar.addEventListener('focus', function () {
-    inter = setInterval(function () {
-        var mass = []
-        prodNames.forEach(el =>{
-            if (el.textContent.search(search_bar.value) == 0 && search_bar.value != ''){
-                mass.push(el.textContent)
-            }
-        })
-        console.log(mass)
-    }, 2000)
-})
-
-search_bar.addEventListener('blur', function () {
-    clearInterval(inter)
 })
