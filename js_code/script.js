@@ -37,14 +37,9 @@ document.addEventListener('click', function (event) {
     if ((!prof_menu.contains(event.target) && prof_menu.classList.contains('open'))&& !avatar.contains(event.target)){
         prof_menu.classList.remove('open')
     }
-})
-
-
-sub_menu.forEach(elem => {
-    elem.onmouseover = function () {
-        elem.classList.add('hov')
-    }
-    elem.onmouseout = function () {
-        elem.classList.remove('hov')
-    }    
+    sub_menu.forEach(elem=>{
+        if (!elem.contains(event.target) && elem.classList.contains('active')) {
+                elem.classList.remove('active')
+        }
+    })
 })

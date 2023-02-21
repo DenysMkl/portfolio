@@ -481,20 +481,6 @@ header.active .items.active .sub_navbar{
 
 @media (min-width: 992px)
 {
-    .items.hov .sub_navbar{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background-color: #21244b;
-        margin-top: 15px;
-        border-radius: 15px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    header.active .items.hov .sub_navbar{
-        background-color: rgb(77, 72, 71);
-    }
-
     .item:hover{
         color: tomato;
     }
