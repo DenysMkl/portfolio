@@ -25,17 +25,6 @@ sub_menu.forEach(elem => {
         elem.classList.toggle('active')
     })
 })
-/*
-logo.addEventListener('click', function () {
-    logo.classList.toggle('active')
-    if(logo.classList.contains('active')){
-        sub_menu[0].textContent = "Главная"
-    }
-    else{
-        sub_menu[0].textContent = "Home"
-    }
-    
-})*/
 
 theme.addEventListener('click', function () {
     theme.classList.toggle('night')
@@ -49,9 +38,3 @@ document.addEventListener('click', function (event) {
         prof_menu.classList.remove('open')
     }
 })
-
-/*let i = 0
-setInterval(function(){
-    console.log(i)
-    i++
-}, 5000)*/

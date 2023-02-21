@@ -36,6 +36,7 @@
     background-color: greenyellow;
     padding: 15px 30px;
     border-radius: 25px;
+    cursor: default;
 }
 
 .but:active{
