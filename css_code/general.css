@@ -479,6 +479,10 @@ header.active .items.active .sub_navbar{
     background-color: rgb(77, 72, 71);
 }
 
+.item{
+    cursor: pointer;
+}
+
 @media (min-width: 992px)
 {
     .item:hover{
