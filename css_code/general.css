@@ -83,8 +83,6 @@ footer{
     justify-content: center;
     align-items: center;
     transition: .5s;
-    bottom: 0;
-    left: 0;
     width: 100%;
 }
 
