@@ -49,7 +49,7 @@ search_bar.addEventListener('focus', function () {
     inter = setInterval(function () {
         var mass = []
         prodNames.forEach(el =>{
-            if (el.textContent.search(search_bar.value) != -1){
+            if (el.textContent.search(search_bar.value) != -1 && search_bar.value != ''){
                 mass.push(el.textContent)
             }
         })
