@@ -32,6 +32,10 @@
     color: black;
 }
 
+.price{
+    font-size: 24px;
+}
+
 .but{
     background-color: greenyellow;
     padding: 15px 30px;
@@ -41,4 +45,24 @@
 
 .but:active{
     transform: translate(2px, 2px);
+}
+
+@media (max-width: 767.98px){
+    .card{
+        margin: 30px 20px;
+    }
+    
+    .prodPhoto{
+        width: 100px;
+        height: 100px;
+    }
+
+    .prodName{
+        font-size: 14px;
+    }
+
+    .but{
+        padding: 15px 20px;
+        border-radius: 20px;
+    }
 }
