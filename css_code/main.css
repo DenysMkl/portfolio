@@ -20,11 +20,14 @@
 
 .linkToProd{
     text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 10px;
 }
 
 .prodPhoto{
     width: 120px;
     height: 120px;
+    border-radius: 10px;
 }
 
 .prodName{
@@ -37,14 +40,18 @@
 }
 
 .but{
-    background-color: greenyellow;
+    background-color: rgba(31, 160, 59, 0.4);
     padding: 15px 30px;
     border-radius: 25px;
     cursor: default;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 4px;
 }
 
 .but:active{
-    transform: translate(2px, 2px);
+    transform: translate(0px, 4px);
+    box-shadow: none;
 }
 
 @media (max-width: 767.98px){
