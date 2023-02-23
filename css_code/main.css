@@ -73,3 +73,51 @@
         border-radius: 20px;
     }
 }
+
+.slider{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.slide_photos{
+    display: flex;
+    position: relative;
+    align-items: center;
+    transition: 2s;
+    left: 0;
+}
+
+.slide_photos .image_slide{
+    width: 100%;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    color: whitesmoke;
+}
+
+.left{
+    left: 0;
+    margin-left: 10%;
+}
+
+.right{
+    right: 0;
+    margin-right: 10%;
+}
+
+.left .fa-angle-down{
+    transform: rotate(90deg);
+}
+
+.right .fa-angle-down{
+    transform: rotate(-90deg);
+}
