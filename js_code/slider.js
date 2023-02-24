@@ -18,13 +18,12 @@ function removeAll(l) {
         elem.classList.remove('active')
     })
     list[counter%img_len.length].classList.add('active')
+    img_list.style.left = -100 * (counter%img_len.length) + '%'
 }
 
 let intervalId = setInterval(()=>{
     counter+=1
     removeAll(list)
-    
-    img_list.style.left = -100 * (counter%img_len.length) + '%'
 }, 5000)
 
 but.forEach(elem =>{
@@ -33,7 +32,6 @@ but.forEach(elem =>{
         intervalId = setInterval(()=>{
             counter+=1
             removeAll(list)
-            img_list.style.left = -100 * (counter%img_len.length) + '%'
         }, 5000)
 
         if (elem.classList.contains('left')){
@@ -46,6 +44,5 @@ but.forEach(elem =>{
             counter+=1
         }
         removeAll(list)
-        img_list.style.left = -100 * (counter%img_len.length) + '%'
     })
 })

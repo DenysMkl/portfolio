@@ -77,7 +77,7 @@
     padding: 3px;
     flex: 1 1 auto;
     background-color: rgb(84, 83, 83, 0.4);
-    transition: 2s;
+    transition: 1s;
 }
 
 .line.active{
@@ -93,8 +93,7 @@
     display: flex;
     position: relative;
     align-items: center;
-    transition: 2s;
-    left: 0;
+    transition: 1s;
 }
 
 .image_slide{
