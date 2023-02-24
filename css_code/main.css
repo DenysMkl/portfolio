@@ -61,7 +61,7 @@
 }
 
 .under_slide{
-    width: 100%;
+    width: 80%;
     height: 20px;
     display: flex;
     align-items: center;
@@ -87,7 +87,6 @@
 .slider{
     display: flex;
     align-items: center;
-    position: relative;
 }
 
 .slide_photos{
@@ -100,6 +99,7 @@
 
 .image_slide{
     width: 100%;
+    max-height: 400px;
 }
 
 .arrow{
@@ -167,5 +167,14 @@
         width: 30px;
         height: 30px;
         font-size: 30px;
+    }
+
+    .under_slide{
+        width: 100%;
+    }
+
+    .slider_line .line{
+        padding: 2px 0;
+        margin: 0 7px;
     }
 }
