@@ -11,18 +11,19 @@ for (i = 0; i < img_len.length; i++){
 }
 
 var list = document.querySelectorAll('.line')
-list[counter%img_len.length].classList.add('active')
+removeAll(list)
 
 function removeAll(l) {
     l.forEach(elem =>{
         elem.classList.remove('active')
     })
+    list[counter%img_len.length].classList.add('active')
 }
 
 let intervalId = setInterval(()=>{
     counter+=1
     removeAll(list)
-    list[counter%img_len.length].classList.add('active')
+    
     img_list.style.left = -100 * (counter%img_len.length) + '%'
 }, 5000)
 
@@ -32,7 +33,6 @@ but.forEach(elem =>{
         intervalId = setInterval(()=>{
             counter+=1
             removeAll(list)
-            list[counter%img_len.length].classList.add('active')
             img_list.style.left = -100 * (counter%img_len.length) + '%'
         }, 5000)
 
@@ -46,7 +46,6 @@ but.forEach(elem =>{
             counter+=1
         }
         removeAll(list)
-        list[counter%img_len.length].classList.add('active')
         img_list.style.left = -100 * (counter%img_len.length) + '%'
     })
 })
