@@ -137,6 +137,7 @@ footer.active{
     justify-content: space-around;
     align-items: center;
     flex-basis: 700px;
+    z-index: 90;
 }
 
 .search{
