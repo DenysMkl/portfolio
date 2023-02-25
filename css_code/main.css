@@ -12,8 +12,8 @@
     background-color: whitesmoke;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 20px;
-    margin: 40px;
-    padding: 10px 30px;
+    margin: 20px;
+    padding: 10px 35px;
 }
 
 .card *{
@@ -26,8 +26,8 @@
 }
 
 .prodPhoto{
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 10px;
 }
 
@@ -175,6 +175,11 @@
     font-weight: 400;
     margin-bottom: 20px;
 }
+
+.ques{
+    font-size: 30px;
+}
+
 
 .ques::after{
     content: '';
