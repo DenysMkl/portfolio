@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 20px 0;
 }
 
 .card{
@@ -12,6 +13,7 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 20px;
     margin: 40px;
+    padding: 10px 30px;
 }
 
 .card *{
@@ -44,7 +46,8 @@
     border-radius: 25px;
     cursor: default;
     font-weight: 700;
-    text-transform: uppercase;
+    font-size: 14px;
+    text-transform: capitalize;
     box-shadow: rgba(0, 0, 0, 0.4) 0 4px;
 }
 
@@ -57,6 +60,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 0 30px 0;
 }
 
 .under_slide{
@@ -141,10 +145,113 @@
     flex: 1 0 100%;
 }
     
-  
+.about_us{
+    margin: 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text_card{
+    text-align: center;
+    margin: 0 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+.text{
+    line-height: 2;
+    font-size: 14px;
+}
+
+.caption{
+    position: relative;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.ques::after{
+    content: '';
+    transform: scaleX(0.3);
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(213, 95, 95);
+}
+
+.list_of_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 10px;
+}
+
+.cards_about{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+    flex-basis: 350px;
+    border-radius: 20px;
+    border: 4px solid rgb(167, 165, 164);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.advantage{
+    padding: 30px;
+    border-radius: 100%;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.card1{
+    background-color: yellowgreen;
+}
+.card2{
+    background-color: aquamarine;
+}
+.card3{
+    background-color: blanchedalmond;
+}
+.card4{
+    background-color:cadetblue;
+}
+.card5{
+    background-color:tomato;
+}
+.card6{
+    background-color:coral;
+}
+
 @media (max-width: 767.98px){
     .card{
-        margin: 30px 20px;
+        margin: 15px 10px;
+        padding: 12px 15px;
+    }
+
+    .card *{
+        margin: 5px;
+    }
+
+    .slider_menu{
+        margin: 0 0 10px 0;
+    }
+
+    .advantage{
+        font-size: 20px;
+        padding: 20px;
     }
 
     .prodPhoto{
@@ -156,9 +263,14 @@
         font-size: 14px;
     }
 
+    .price{
+        font-size: 18px;
+    }
+
     .but{
-        padding: 15px 20px;
+        padding: 10px 10px;
         border-radius: 20px;
+        font-size: 10px;
     }
 
     .arrow{
@@ -174,5 +286,18 @@
     .slider_line .line{
         padding: 2px 0;
         margin: 0 7px;
+    }
+    
+    .text_card{
+        margin: 0;
+    }
+
+    .caption{
+        font-size: 18px;
+    }
+
+    .about_us p{
+        line-height: 1.5;
+        font-size: 12px;
     }
 }
