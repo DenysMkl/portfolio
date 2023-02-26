@@ -54,7 +54,7 @@ document.addEventListener('scroll', function(event){
     else{
         header.classList.remove('fixed_pos')
     }
-    if(event.target.scrollingElement.scrollTop < 60){
+    if(event.target.scrollingElement.scrollTop < 300){
         header.classList.remove('fixed_pos')
     }
     prev = event.target.scrollingElement.scrollTop
