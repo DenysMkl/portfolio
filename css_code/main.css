@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px 40px;
 }
 
 .card{
@@ -244,6 +244,10 @@
     .card{
         margin: 15px 10px;
         padding: 12px 15px;
+    }
+
+    .catalog{
+        margin: 15px 10px;
     }
 
     .card *{
