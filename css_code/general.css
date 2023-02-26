@@ -507,14 +507,6 @@ header.active .items.active .sub_navbar{
     .item:hover{
         color: tomato;
     }
-    
-    header.fixed_pos{
-        background-color: rgb(33, 36, 75, 0.6);
-    }
-
-    header.active.fixed_pos{
-        background-color: rgb(77, 72, 71, 0.6);
-    }
 }
 @media (max-width: 1087px)
 {
@@ -554,6 +546,16 @@ header.active .items.active .sub_navbar{
     }
 
 
+}
+
+@media (min-width: 768px){
+    header.fixed_pos{
+        background-color: rgb(33, 36, 75, 0.6);
+    }
+
+    header.active.fixed_pos{
+        background-color: rgb(77, 72, 71, 0.6);
+    }
 }
 
 @media (max-width: 767.98px) {
