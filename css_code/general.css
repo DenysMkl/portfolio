@@ -84,14 +84,12 @@ footer{
     justify-content: center;
     align-items: center;
     transition: .5s;
-    width: 100%;
 }
 
 header{
     max-height: 90px;
-    background-color: #21244b;
+    background-color: rgb(33, 36, 75);
     color: whitesmoke;
-    width: 100%;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     transition: .5s;
 }
@@ -106,6 +104,20 @@ footer.active{
     max-width: 1140px;
     margin: 0px auto;
     padding: 0px 15px;
+}
+
+header.active.fixed_pos{
+    background-color: rgb(77, 72, 71, 0.6);
+}
+
+header.fixed_pos{
+    position: fixed;
+    top: -100px;
+    transform: translateY(100px);
+    background-color: rgb(33, 36, 75, 0.6);
+    width: 100%;
+    backdrop-filter: blur(4px);
+    z-index: 9;
 }
 
 .header_container{

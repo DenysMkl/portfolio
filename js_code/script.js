@@ -43,3 +43,19 @@ document.addEventListener('click', function (event) {
         }
     })
 })
+
+var prev = 0
+
+document.addEventListener('scroll', function(event){
+    //console.log(event.target.scrollingElement.scrollTop, prev)
+    if (prev > event.target.scrollingElement.scrollTop){
+        header.classList.add('fixed_pos')
+    }
+    else{
+        header.classList.remove('fixed_pos')
+    }
+    if(event.target.scrollingElement.scrollTop < 60){
+        header.classList.remove('fixed_pos')
+    }
+    prev = event.target.scrollingElement.scrollTop
+})
