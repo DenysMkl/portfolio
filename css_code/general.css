@@ -107,16 +107,11 @@ footer.active{
     padding: 0px 15px;
 }
 
-header.active.fixed_pos{
-    background-color: rgb(77, 72, 71, 0.6);
-}
-
 header.fixed_pos{
     position: fixed;
     animation-name: menu;
     animation-fill-mode: forwards;
     animation-duration: .5s;
-    background-color: rgb(33, 36, 75, 0.6);
     width: 100%;
     backdrop-filter: blur(4px);
 }
@@ -513,6 +508,13 @@ header.active .items.active .sub_navbar{
         color: tomato;
     }
     
+    header.fixed_pos{
+        background-color: rgb(33, 36, 75, 0.6);
+    }
+
+    header.active.fixed_pos{
+        background-color: rgb(77, 72, 71, 0.6);
+    }
 }
 @media (max-width: 1087px)
 {
