@@ -276,6 +276,7 @@ header.fixed_pos{
 .profile_info{
     position: absolute;
     top: 0px;
+    visibility: hidden;
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -483,6 +484,7 @@ header.fixed_pos{
 
 .profile_info.open{
     opacity: 1;
+    visibility:visible;
     transform: translateY(60px);
     z-index: 999;
 }
