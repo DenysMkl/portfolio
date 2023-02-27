@@ -100,41 +100,14 @@ footer.active{
     padding: 0px 15px;
 }
 
-header.fixed_pos,
-header.fixed_pos_close{
+header.fixed_pos{
     position: fixed;
     width: 100%;
-    backdrop-filter: blur(4px);
+    top: -100%;
 }
 
-header.fixed_pos{
-    animation-name: menu;
-    animation-fill-mode: forwards;
-    animation-duration: .5s;
-}
-
-header.fixed_pos_close{
-    animation-name: reverse_menu;    
-    animation-fill-mode: forwards;
-    animation-duration: .5s;
-}
-
-@keyframes menu{
-    from{
-        top: -100px;
-    }
-    to{
-        top: 0px;
-    }
-}
-
-@keyframes reverse_menu{
-    from{
-        top: 0px;
-    }
-    to{
-        top: -100px;
-    }
+header.fixed_pos.show{
+    top: 0%;
 }
 
 .header_container{
