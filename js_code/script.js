@@ -49,13 +49,16 @@ var prev = 0
 document.addEventListener('scroll', function(event){
     if (prev > event.target.scrollingElement.scrollTop){
         header.classList.add('fixed_pos')
+        header.classList.remove('fixed_pos_close')
     }
     else{
+        header.classList.add('fixed_pos_close')
         header.classList.remove('fixed_pos')
         prof_menu.classList.remove('open')
     }
     if(event.target.scrollingElement.scrollTop < 60){
         header.classList.remove('fixed_pos')
+        header.classList.remove('fixed_pos_close')
     }
     prev = event.target.scrollingElement.scrollTop
 })
