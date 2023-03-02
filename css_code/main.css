@@ -314,7 +314,6 @@
 @media (max-width: 767.98px){
     .card{
         margin: 10px 10px;
-        padding: 12px 15px;
     }
 
     .catalog{
@@ -348,7 +347,6 @@
 
     .but{
         padding: 10px 10px;
-        border-radius: 20px;
         font-size: 10px;
     }
 
