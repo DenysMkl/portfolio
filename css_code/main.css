@@ -14,15 +14,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: rgb(132, 128, 128);
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 20px;
     margin: 20px;
-    padding: 10px 35px;
+    padding: 20px 15px;
+    overflow: hidden;
+    position: relative;
+    color: whitesmoke;
+    flex: 0 1 200px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card *{
-    margin: 10px;
+    transition: .5s;
+    z-index: 8;
+}
+
+.bg{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    top: -50px;
+    left: -50px;
+    background-color: aquamarine;
+    margin: 0;
+    z-index: 7;
 }
 
 .linkToProd{
@@ -31,24 +49,23 @@
 }
 
 .prodPhoto{
-    width: 140px;
-    height: 140px;
-    border-radius: 10px;
+    max-width: 140px;
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 .prodName{
     font-size: 20px;
-    color: black;
-}
-
-.price{
-    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-align: start;
+    
 }
 
 .but{
     background-color: rgba(31, 160, 59, 0.4);
     padding: 15px 30px;
-    border-radius: 25px;
+    border-radius: 7px;
     cursor: default;
     font-weight: 700;
     font-size: 14px;
@@ -59,6 +76,16 @@
 .but:active{
     transform: translate(0px, 4px);
     box-shadow: none;
+    transition: none;
+}
+
+.card.hover .bg{
+    transform: translate(30px, -50px) scale(2);
+}
+
+.card.hover .prodPhoto
+{
+    transform: translate(20px,-20px) scale(1.2) rotate(20deg);
 }
 
 .slider_menu{
@@ -73,6 +100,45 @@
     height: 20px;
     display: flex;
     align-items: center;
+}
+
+.add_about_prod{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    text-transform: capitalize;
+    height: 30px;
+    cursor: default;
+    font-size: 14px;
+}
+
+.color_var{
+    display: flex;
+    flex-basis: 50px;
+    justify-content: flex-start;
+    height: 15px;
+    gap: 5px;
+    padding: 0 5px;
+    flex: 1 1 auto;
+}
+
+.price{
+    font-size: 18px;
+    text-align: end;
+}
+
+.color_item{
+    flex-basis: 15px;
+    border-radius: 100%;
+}
+
+.color_item.red{
+    background-color: rgb(197, 61, 16);
+}
+
+.color_item.blue{
+    background-color: rgb(66, 143, 190);
 }
 
 .slider_line{
@@ -255,8 +321,12 @@
         margin: 15px 0px;
     }
 
-    .card *{
-        margin: 5px;
+    .bg{
+        margin: 0;
+        width: 90px;
+        height: 90px;
+        top: -20px;
+        left: -20px;
     }
 
     .slider_menu{
@@ -269,16 +339,11 @@
     }
 
     .prodPhoto{
-        width: 100px;
-        height: 100px;
+        max-width: 100px;
     }
 
     .prodName{
         font-size: 14px;
-    }
-
-    .price{
-        font-size: 18px;
     }
 
     .but{

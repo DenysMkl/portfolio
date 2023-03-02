@@ -7,6 +7,7 @@ var header = document.querySelector('.header')
 var footer = document.querySelector('.footer')
 var avatar = document.querySelector('.profile')
 var prof_menu = document.querySelector('.profile_info')
+var prod = document.querySelectorAll('.card')
 
 
 avatar.addEventListener('click', function () {
@@ -48,18 +49,43 @@ var prev = 0
 
 document.addEventListener('scroll', function(event){
     
-    if(event.target.scrollingElement.scrollTop < 60){
+    let pos = event.target.scrollingElement.scrollTop
+    if(pos < 60){
         header.classList.remove('fixed_pos')
         header.classList.remove('show')
     }
     else{
         header.classList.add('fixed_pos')
     }
-    if (prev > event.target.scrollingElement.scrollTop) {
+    if (prev > pos) {
         header.classList.add('show')
     }
     else{
         header.classList.remove('show')
     }
-    prev = event.target.scrollingElement.scrollTop
+    prev = pos
+})
+
+let mass = []
+
+prod.forEach(elem =>{
+    elem.onmouseover = function (){
+        elem.classList.add('hover')
+    }
+    elem.onmouseout = function(){
+        elem.classList.remove('hover')
+    }
+
+    
+    elem.addEventListener('click', function(event){
+        classElems = Array.from(elem.querySelectorAll('.color_item')).map((elem)=>elem.className.split(' ').slice(1))
+        
+        classElems.forEach((color)=>{
+            if (event.target.classList.contains(color)){
+                color = color.toString()
+                
+                elem.querySelector('.prodPhoto').src = `../photos/${color}.png`
+            }
+        })
+    })
 })

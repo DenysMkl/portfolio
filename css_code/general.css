@@ -405,7 +405,7 @@ header.fixed_pos.show{
 .networks{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 15px;
 }
 
@@ -479,6 +479,14 @@ header.fixed_pos.show{
     margin-top: 15px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.fa-angle-down{
+    transition: .5s;
+}
+
+.items.active .fa-angle-down{
+    transform: rotate(180deg);
 }
 
 header.active .items.active .sub_navbar{
@@ -588,7 +596,7 @@ header.active .items.active .sub_navbar{
         justify-content: flex-start;
         background-color: #21244b;
         margin-top: 56px;
-        padding: 20px 0 20px 0;
+        padding: 20px 0;
         left: -100%;
         transition: .5s;
     }
