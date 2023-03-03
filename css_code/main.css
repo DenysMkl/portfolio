@@ -29,6 +29,7 @@
 .card *{
     transition: .5s;
     z-index: 8;
+
 }
 
 .bg{
@@ -103,16 +104,16 @@
     width: 100%;
     justify-content: space-between;
     text-transform: capitalize;
-    height: 30px;
+    min-height: 30px;
+    margin: 15px;
     cursor: default;
     font-size: 14px;
 }
 
 .color_var{
     display: flex;
-    flex-basis: 50px;
     justify-content: flex-start;
-    height: 20px;
+    min-height: 30px;
     gap: 5px;
     padding: 0 5px;
     flex: 1 1 auto;
@@ -124,11 +125,16 @@
 }
 
 .color_item{
-    flex-basis: 20px;
+    flex-basis: 25px;
     border-radius: 100%;
+    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.color{
+    font-size: 18px;
 }
 
 .color_item.red{
@@ -324,18 +330,46 @@
 @media (max-width: 767.98px){
     .card{
         margin: 10px 10px;
+        flex: 1 1 auto;
+        min-height: 300px;
+        justify-content: space-around;
+    }
+
+    .linkToProd{
+        justify-content: space-between;
+    }
+
+    .add_about_prod{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        flex: 1 1 auto;
+        margin: 10px;
+    }
+
+    .color{
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    .color_var{
+        flex: 3 1 auto;
+    }
+
+    .color_item{
+        flex-basis: 30px;
+        height: 30px;
+    }
+
+    .price{
+        flex: 1 0 100%;
+        text-align: center;
+        margin-top: 10px;
     }
 
     .catalog{
         margin: 15px 0px;
-    }
-
-    .bg{
-        margin: 0;
-        width: 90px;
-        height: 90px;
-        top: -20px;
-        left: -20px;
     }
 
     .slider_menu{
@@ -347,17 +381,16 @@
         padding: 20px;
     }
 
-    .prodPhoto{
-        max-width: 100px;
-    }
-
     .prodName{
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .but{
-        padding: 10px 10px;
-        font-size: 10px;
+        padding: 10px;
+        font-size: 16px;
+        margin: 10px;
+        width: 100%;
+        text-align: center;
     }
 
     .arrow{
