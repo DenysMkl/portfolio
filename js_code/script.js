@@ -61,6 +61,9 @@ document.addEventListener('scroll', function(event){
     }
     else{
         header.classList.remove('show')
+        if (window.innerHeight < 440){
+            prof_menu.classList.remove('open')
+        }
     }
     prev = pos
 })
