@@ -10,13 +10,22 @@ prod.forEach(elem =>{
 
     
     elem.addEventListener('click', function(event){
-        classElems = Array.from(elem.querySelectorAll('.color_item')).map((elem)=>elem.className.split(' ').slice(1))
+        var spisok_elems = elem.querySelectorAll('.color_item')
+        var arr_spisok = Array.from(spisok_elems)
         
-        classElems.forEach((color)=>{
-            if (event.target.classList.contains(color)){
-                color = color.toString()
-                
-                elem.querySelector('.prodPhoto').src = `../photos/${color}.png`
+        
+        if (arr_spisok.includes(event.target)) {
+            spisok_elems.forEach(delAll =>{
+                delAll.classList.remove('active')
+            })   
+        }
+
+        spisok_elems.forEach((color)=>{
+            classElems = color.className.split(' ').at(-1)
+            check_target = event.target.classList.contains(classElems)
+            if (check_target){
+                elem.querySelector('.prodPhoto').src = `../photos/${classElems}.png`
+                color.classList.add('active')
             }
         })
     })

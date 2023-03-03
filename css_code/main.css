@@ -121,7 +121,7 @@
     display: flex;
     flex-basis: 50px;
     justify-content: flex-start;
-    height: 15px;
+    height: 20px;
     gap: 5px;
     padding: 0 5px;
     flex: 1 1 auto;
@@ -133,8 +133,11 @@
 }
 
 .color_item{
-    flex-basis: 15px;
+    flex-basis: 20px;
     border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .color_item.red{
@@ -143,6 +146,18 @@
 
 .color_item.blue{
     background-color: rgb(66, 143, 190);
+}
+
+.color_but{
+    border-radius: 100%;
+    width: 80%;
+    height: 80%;
+    border: 1.5px solid whitesmoke;
+    display: none;
+}
+
+.color_item.active .color_but{
+    display: block;
 }
 
 .slider_line{
