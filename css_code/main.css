@@ -83,15 +83,6 @@
     transition: none;
 }
 
-.card.hover .bg{
-    transform: translate(30px, -50px) scale(2);
-}
-
-.card.hover .prodPhoto
-{
-    transform: translate(20px,-20px) scale(1.2) rotate(20deg);
-}
-
 .slider_menu{
     display: flex;
     flex-direction: column;
@@ -396,4 +387,15 @@
         line-height: 1.5;
         font-size: 12px;
     }
+}
+
+@media (hover: hover) and (pointer: fine ) {
+    .card.hover .bg{
+        transform: translate(30px, -50px) scale(2);
+    }
+    
+    .card.hover .prodPhoto
+    {
+        transform: translate(20px,-20px) scale(1.2) rotate(20deg);
+    }   
 }
