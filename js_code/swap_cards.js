@@ -24,7 +24,7 @@ prod.forEach(elem =>{
             classElems = color.className.split(' ').at(-1)
             check_target = event.target.classList.contains(classElems)
             if (check_target){
-                elem.querySelector('.prodPhoto').src = `../photos/${classElems}.png`
+                elem.querySelector('.prodPhoto').src = `photos/${classElems}.png`
                 color.classList.add('active')
             }
         })
