@@ -301,6 +301,7 @@ header.fixed_pos.show{
     border-radius: 8px;    
     align-items: center;
     flex-direction: column;
+    cursor: default;
 }
 
 .wrap .profile_block:hover{
