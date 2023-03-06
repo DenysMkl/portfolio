@@ -327,6 +327,10 @@
     background-color:coral;
 }
 
+.tree{
+    display: flex;
+}
+
 @media (max-width: 767.98px){
     .card{
         margin: 10px 10px;

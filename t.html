@@ -4,9 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css_code/main.css">
+    <link rel="stylesheet" href="./css_code/general.css">
     <title>My list</title>
 </head>
 <body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header_container">
+                <a href="./index.html" class="logo">
+                    <img src="photos/logo.png" alt="logotype" class="logotype bar_img">
+                    <span class="company_name">nuroin</span>
+                </a>
+                <div class="phone_menu" id="phone_menu">
+                    <span class="x_bar"></span>
+                </div>
+                <div class="change_block" id="open">
+                    <div class="search">
+                        <input type="text" placeholder="Search..." class="search_bar">
+                        <a href="#"><i class="fas fa-search fa-2x"></i></a>
+                    </div>
+                    <div class="side-menu">
+                        <ul class="navbar">
+                            <li class="items item1"><a href="#" class="item">Home</a></li>
+                            <li class="items item2"><a href="#" class="item">Explore</a></li>
+                            <li class="items item3">
+                                <p class="item">Community <i class="fa fa-angle-down"></i></p>
+                                <ul class="sub_navbar">
+                                    <li class="subitems subitem1"><a href="#" class="item">Community1</a></li>
+                                    <li class="subitems subitem2"><a href="#" class="item">Community2</a></li>
+                                    <li class="subitems subitem3"><a href="#" class="item">Community3</a></li>
+                                </ul>
+                            </li>
+                            <li class="items item4">
+                                <p class="item">Pages <i class="fa fa-angle-down"></i></p>
+                                    <ul class="sub_navbar">
+                                        <li class="subitems subitem1"><a href="#" class="item">Pages1</a></li>
+                                        <li class="subitems subitem2"><a href="#" class="item">Pages2</a></li>
+                                        <li class="subitems subitem3"><a href="#" class="item">Pages3</a></li>
+                                    </ul>
+                            </li>
+                            <li class="items item5"><a href="#" class="item">Activity</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile_info">
+                    <div class="user_prof">
+                        <a href="./h.html">
+                            <img src="photos/user.png" alt="user_photo" class="user add_bar">
+                        </a>
+                        <a href="#" class="user_nick">User123UA</a>
+                    </div>
+                    <div class="wrap">
+                        <a href="./t.html" class="profile_block">My List</a>
+                        <a href="#" class="profile_block">Notebook</a>
+                        <a href="#" class="profile_block">Submissions</a>
+                        <a href="#" class="profile_block">Progress</a>
+                        <a href="#" class="profile_block">Points</a>
+                        <a href="#" class="profile_block">Session</a>
+                    </div>
+                    <ul class="params">
+                        <li class="param_items"><p class="prof_text">Orders</p></li>
+                        <li class="param_items"><p class="prof_text">My Playgrounds</p></li>
+                        <li class="param_items swap_theme"><p class="prof_text">Dark side</p>
+                            <div class="swapper">
+                                <i class="fas fa-sun"></i>
+                                <div class="theme night">
+                                    <div class="switcher"></div>
+                                </div>
+                                <i class="fas fa-moon"></i>
+                            </div>         
+                        </li>
+                        <li class="param_items"><p class="prof_text">Sign Out</p></li>
+                    </ul>
+                </div>
+                <div class="profile">
+                    <div class="avatar">
+                        <div class="avatar_block">
+                            <img src="photos/user.png" alt="user_photo" class="user bar_img">
+                        </div>
+                        <div class="status online"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main_container">
+                <ul class="tree">
+                    
+                </ul>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="networks">
+                    <p>Get connected with us on social networks</p>
+                    <div class="contacts">
+                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <ul class="info_list">
+                        <li class="add_info"><p>Company name</p></li>
+                        <li class="add_info"><p>Products</p>
+                            <ul class="info_bar">
+                                <li class="details">Smartphone</li>
+                                <li class="details">Computer</li>
+                                <li class="details">Tablet</li>
+                                <li class="details">Headphones</li>
+                            </ul>
+                        </li>
+                        <li class="add_info"><p>Useful links</p>
+                            <ul class="info_bar">
+                                <li class="details">Your account</li>
+                                <li class="details">About us</li>
+                                <li class="details">Shopping Rates</li>
+                                <li class="details">FAQ</li>
+                            </ul>
+                        </li>
+                        <li class="add_info"><p>Contact</p>
+                            <ul class="info_bar">
+                                <li class="details"><i class="fas fa-home"></i> Kharkiv, Kh, UA</li>
+                                <li class="details"><i class="fas fa-phone"></i> +01 234 567 89</li>
+                                <li class="details"><i class="fas fa-envelope"></i> info@example.com</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>© 2023 Copyright: github.com/DenysMkl</p>          
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js_code/script.js"></script>
     <script src="./link.js"></script>
 </body>
 </html>
