@@ -21,12 +21,12 @@ else{
 
 localStorage.setItem('way', JSON.stringify(storedWay));
 
-ul = document.querySelector('.tree')
-for (let i = 0; i < storedWay.length; i++) {
-  var li = document.createElement('li')
-  li.classList.add('leaf')
-  li.textContent = storedWay[i]
-  ul.appendChild(li)
+if (document.title != 'Main_Page') {
+  ul = document.querySelector('.tree')
+  for (let i = 0; i < storedWay.length; i++) {
+    var li = document.createElement('li')
+    li.classList.add('leaf')
+    li.textContent = storedWay[i].replace(/"/g, '')
+    ul.appendChild(li)
+  } 
 }
-
-console.log(JSON.parse(localStorage.getItem('way')));
