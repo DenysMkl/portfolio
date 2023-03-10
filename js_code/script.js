@@ -7,7 +7,8 @@ var header = document.querySelector('.header')
 var footer = document.querySelector('.footer')
 var avatar = document.querySelector('.profile')
 var prof_menu = document.querySelector('.profile_info')
-
+var lang = document.querySelector('.curLang')
+var langVar = document.querySelectorAll('.lang')
 
 avatar.addEventListener('click', function () {
     prof_menu.classList.toggle('open')
@@ -66,4 +67,17 @@ document.addEventListener('scroll', function(event){
         }
     }
     prev = pos
+})
+
+lang.addEventListener('click', ()=>{
+    lang.classList.toggle('active')
+})
+
+langVar.forEach(l =>{
+    l.addEventListener('click', (ev)=> {
+        ev.preventDefault()
+        curLink = window.location.href.split('?')[0]
+        var newLink = curLink + `?lang=${ev.target.textContent}`;
+        window.location.href = newLink
+    })
 })

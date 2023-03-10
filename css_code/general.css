@@ -140,8 +140,52 @@ header.fixed_pos.show{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-basis: 700px;
+    flex-basis: 750px;
     z-index: 90;
+}
+
+.langBlock{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+    cursor: default;
+    font-size: 16px;
+}
+
+.swapLang{
+    display: none;
+    position: absolute;
+    top: 30px;
+    background-color: #21244b;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.swapLang >*{
+    padding: 5px 10px;
+}
+
+.curLang{
+    transition: 1s;
+}
+
+.lang:hover{
+    background-color: rgb(123, 115, 115);
+    border-radius: 5px;
+}
+
+.curLang.active ~ .swapLang{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.curLang.active .fa-angle-down{
+    transform: rotate(180deg);
 }
 
 .search{
